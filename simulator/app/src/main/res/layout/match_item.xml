@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_default">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/homeTeam"
+            android:layout_width="@dimen/team_image_size"
+            android:layout_height="120dp"
+            android:layout_marginStart="@dimen/margin_default"
+            android:layout_marginTop="@dimen/margin_default"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@tools:sample/avatars"
+            android:contentDescription="@string/txt_Home_Team" />
+
+        <TextView
+            android:id="@+id/homeTeamName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_default"
+            android:layout_marginBottom="@dimen/margin_default"
+            tools:text="Home Team"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/homeTeam"
+            app:layout_constraintStart_toStartOf="@+id/homeTeam"
+            app:layout_constraintTop_toBottomOf="@+id/homeTeam" />
+
+        <TextView
+            android:id="@+id/homeTeamScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="10"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintBottom_toBottomOf="@+id/homeTeam"
+            app:layout_constraintEnd_toStartOf="@+id/Versus"
+            app:layout_constraintStart_toEndOf="@+id/homeTeam"
+            app:layout_constraintTop_toTopOf="@+id/homeTeam" />
+
+        <TextView
+            android:id="@+id/Versus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_versus"
+            app:layout_constraintBottom_toBottomOf="@+id/homeTeam"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/homeTeam" />
+
+        <ImageView
+            android:id="@+id/visitorTeam"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="@dimen/margin_default"
+            android:layout_marginEnd="@dimen/margin_default"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@tools:sample/avatars"
+            android:contentDescription="@string/txt_visitors_team" />
+
+        <TextView
+            android:id="@+id/visitorTeamName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="TextView"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/visitorTeam"
+            app:layout_constraintStart_toStartOf="@+id/visitorTeam"
+            app:layout_constraintTop_toBottomOf="@+id/visitorTeam" />
+
+        <TextView
+            android:id="@+id/visitorTeamScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="7"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintBottom_toBottomOf="@+id/visitorTeam"
+            app:layout_constraintEnd_toStartOf="@+id/visitorTeam"
+            app:layout_constraintStart_toEndOf="@+id/Versus"
+            app:layout_constraintTop_toTopOf="@+id/visitorTeam" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--criar um xml no formato pt-br: new values->nome.xml-> locale-> pt-> brasil-> cria um xml "traduzido"-->
+
+<resources>
+    <string name="app_name">simulador</string>
+</resources>
